@@ -6,6 +6,8 @@ import Education from 'components/education'
 import Skills from 'components/skills'
 import Experience from 'components/experience'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 function App() {
   const [info, setInfo] = useState({
     name: 'Đồng Đức Lân',
@@ -120,16 +122,37 @@ function App() {
       ]
     },
   ])
+  const handleDownloadPDF = () => {
+    const element = document.getElementById('cv');
+
+    html2canvas(element).then((canvas) => {
+      const imgWidth = 210;
+      const pageHeight = 300;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      let heightLeft = imgHeight;
+      let position = 0;
+      heightLeft -= pageHeight;
+      const doc = jsPDF('p', 'mm');
+      doc.addImage(canvas, 'PNG', 0, position, imgWidth, imgHeight, '', 'FAST');
+      while (heightLeft >= 0) {
+        position = heightLeft - imgHeight;
+        doc.addPage();
+        doc.addImage(canvas, 'PNG', 0, position, imgWidth, imgHeight, '', 'FAST');
+        heightLeft -= pageHeight;
+      }
+      doc.save('CV-ĐỒNG ĐỨC LÂN.pdf');
+    });
+  };
   return (
     <div className='page'>
       <div id="header-viewer" className="non-printable">
         <h1>Xem CV Online của Đồng Đức Lân</h1>
-        <div className="btn-download-cv" data-id="B1AFUgVVA1xVAVpWBARSCldYDwgAVwMOVVZTUAddcb" data-name="Đồng Đức Lân" data-cv-id="c25c105eb9b2e5686980ffa9bb14ddcb">
+        <button onClick={handleDownloadPDF} className="btn-download-cv" data-id="B1AFUgVVA1xVAVpWBARSCldYDwgAVwMOVVZTUAddcb" data-name="Đồng Đức Lân" data-cv-id="c25c105eb9b2e5686980ffa9bb14ddcb">
           <i className="fa fa-download" />
           <span> Tải CV PDF</span>
-        </div>
+        </button>
       </div>
-      <div className='cv'>
+      <div id="cv" className='cv'>
         <Info info={info} />
         <Aim aim={aim} />
         <Education education={education} />
