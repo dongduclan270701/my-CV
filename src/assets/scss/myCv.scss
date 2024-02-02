@@ -1,0 +1,145 @@
+#myCv {
+    background-image: url(https://www.topcv.vn/v4/image/cv_builder/background/bg_3.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #222;
+    padding-top:90px;
+    padding-bottom:90px
+}
+
+#header-viewer {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+    height: 50px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    width: -webkit-fill-available;
+    z-index: 10000;
+}
+
+#header-viewer h1 {
+    color: #ddd;
+    float: left;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px 0 0 20px;
+}
+
+#header-viewer .btn-download-cv {
+    background: 0 0;
+    color: #ccc;
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 20px;
+    border: none;
+}
+
+#header-viewer .btn-download-cv:hover {
+    color: #eeeeee;
+}
+
+.cv {
+    margin: 0 auto;
+    padding: 15px;
+    background-color: white;
+    min-height: 260mm;
+    width: 210mm;
+}
+
+.info-name {
+    font-weight: bold;
+    /* font-size: 9mm; */
+    font-size: 30px;
+}
+
+.info-desc {
+    font-size: 16px;
+}
+
+.info-right {
+    padding: 10px;
+    border-left: 2px solid black;
+}
+
+.info-exp-name {
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.info-exp {
+    margin-bottom: 5px;
+}
+
+.info-exp-right {
+    position: relative;
+    padding: 10px;
+    border-left: 1px dashed rgb(0, 0, 0);
+}
+
+.fa {
+    font-size: 13px;
+    margin: 0 auto;
+    padding-right: 5px;
+}
+
+.info-right-span {
+    font-size: 14px;
+}
+
+.por {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title-content {
+    font-size: 16px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.underline-title {
+    background-color: #222;
+    height: 1px;
+    flex-grow: 100;
+}
+
+.underline {
+    background-color: #222;
+    width: 50px;
+    height: 4px;
+}
+
+.content {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.aim-content {
+    margin: 10px 0;
+}
+
+.info-exp-right:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -6.55px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black;
+}
