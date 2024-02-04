@@ -1,8 +1,9 @@
-import { useState } from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CV from 'components/CV'
-import Page from 'components/Page'
+// import CVEn from 'components/en/CV'
+// import CVVi from 'components/vi/CV'
+import PageEn from 'components/en/Page'
+import PageVi from 'components/vi/Page'
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,8 +11,10 @@ import {
 } from 'react-router-dom'
 function App() {
   const page = [
-    { path: "/", location: Page },
-    { path: "/my-cv", location: CV }
+    { path: "/en-US/", location: PageEn },
+    { path: "/vi-VN/", location: PageVi },
+    // { path: "/en-US/my-cv", location: CVEn },
+    // { path: "/vi-VN/my-cv", location: CVVi }
   ]
   return (
     <Router>

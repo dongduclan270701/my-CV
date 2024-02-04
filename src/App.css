@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  color: black;
   font-family: 'Saira Condensed', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -9,5 +8,5 @@
 }
 
 body {
-  background-color: #EDEDED !important;
+  background-color: #343434 !important
 }

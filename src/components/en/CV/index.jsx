@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-import Info from 'components/CV/info'
-import Aim from 'components/CV/aim'
-import Education from 'components/CV/education'
-import Skills from 'components/CV/skills'
-import Experience from 'components/CV/experience'
+import Info from 'components/en/CV/info'
+import Aim from 'components/en/CV/aim'
+import Education from 'components/en/CV/education'
+import Skills from 'components/en/CV/skills'
+import Experience from 'components/en/CV/experience'
 import 'assets/scss/myCv.scss'
 const Index = () => {
     const [info, setInfo] = useState({

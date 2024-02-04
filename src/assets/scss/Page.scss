@@ -1,13 +1,468 @@
-.card{
-    padding:12px 16px;
-    border-radius: 15px;
-    display:block;
-    opacity:0;
-    transition: all 0.1s;
-    margin-bottom:16px;
-    transform: translate3d(-50px,0,0);
-}
-.card.active{
-    opacity:1;
-    transform: translate3d(0,0,0);
+.section-page {
+    color: white;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+    .section-header {
+        max-width: 1320px;
+        margin: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        animation-duration: 2s;
+        animation-name: slideInHeader;
+        @keyframes slideInHeader {
+            from {
+                // transform: translateX(50px);
+                opacity: 0;
+            }
+            to {
+                // transform: translateX(-10px);
+                opacity: 1;
+            }
+        }
+        .section-header-nav {
+            position: fixed;
+            z-index: 9999;
+            padding: 0 40px;
+            width: fit-content;
+            .login-sign {
+                width: 150px;
+                background-image: linear-gradient(to right, #8482be, #bde8ff);
+                border-radius: 8px;
+                margin: 75px 0;
+            }
+            .section-nav {
+                padding-bottom: 10px;
+            }
+            .section-nav > a {
+                text-decoration: none;
+                color: white;
+                position: relative;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+            .section-nav > a::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 3px;
+                background: linear-gradient(to right, #8482be, #bde8ff);
+                transition: width 0.4s ease-out;
+                z-index: -1; /* Đặt z-index để pseudo-element nằm dưới nội dung của thẻ a */
+            }
+            .section-nav > a:hover::before,
+            .section-nav > a.active::before {
+                width: 100%;
+            }
+            .lang {
+                // padding: 5px;
+                background-color: unset;
+                width: fit-content;
+                color: white;
+                border-radius: 8px;
+                border: 0.1px solid rgb(79 79 79);
+            }
+        }
+    }
+    .section-content {
+        max-width: 1320px;
+        margin: auto;
+        .section-content-home {
+            display: flex;
+            padding: 75px 0 75px 0;
+            justify-content: space-evenly;
+            .section-home-title {
+                // width: 300px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+                .section-home-title-name {
+                    writing-mode: vertical-rl;
+                    -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                    text-align: left;
+                    font-size: 120px;
+                    line-height: 160px;
+                    font-style: normal;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    background: -webkit-linear-gradient(#8482be, #bde8ff);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                .section-home-title-desc {
+                    // padding: 0 10px;
+                    text-align: left;
+                    font-size: 21px;
+                    line-height: 35px;
+                    max-width: 330px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+                &.active > .section-home-title-name,
+                &.active > .section-home-title-desc {
+                    animation-duration: 1.5s;
+                    animation-name: slideInTextTitle;
+                    @keyframes slideInTextTitle {
+                        from {
+                            width: 0;
+                            opacity: 0;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                        to {
+                            width: 330px;
+                            opacity: 1;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+            .section-home-img {
+                img {
+                    border-radius: 8px;
+                    width: 625px;
+                    height: 710px;
+                    box-shadow: -23px 32px 0px 0px #25252e;
+                    // object-fit: contain;
+                }
+            }
+        }
+        .section-content-about {
+            margin-top: 100px;
+            padding: 75px 0 75px 0;
+            .section-about-title {
+                position: absolute;
+                left: -130px;
+                font-size: 188px;
+                font-weight: 800;
+                letter-spacing: 15px;
+                -webkit-writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                text-align: left;
+                color: #202020;
+                &.active {
+                    animation-duration: 2s;
+                    animation-name: slideInAboutTitle;
+                    @keyframes slideInAboutTitle {
+                        from {
+                            transform: rotate(180deg) translateX(-150px);
+                            opacity: 0;
+                        }
+                        to {
+                            transform: rotate(180deg) translateX(0px);
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .section-about-infor {
+                display: flex;
+                padding: 20px 0 50px 150px;
+                .section-about-infor-left {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                    .section-about-infor-box {
+                        &.active {
+                            animation-duration: 2s;
+                            animation-name: slideInAboutInforLeft;
+                            @keyframes slideInAboutInforLeft {
+                                from {
+                                    opacity: 0;
+                                }
+                                to {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        .section-about-infor-title {
+                            letter-spacing: 5px;
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                        .section-about-infor-content {
+                            font-size: 23px;
+                            a {
+                                color: white;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                .section-about-infor-right {
+                    width: 50%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: fit-content;
+                    .section-about-infor-number {
+                        width: 50%;
+                        padding: 10px;
+                        .section-about-infor-number-title {
+                            letter-spacing: 5px;
+                            font-size: 23px;
+                        }
+                        .section-about-infor-number-content,
+                        .section-about-infor-number-content span {
+                            font-size: 80px;
+                            line-height: 100px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            background: -webkit-linear-gradient(#8482be, #bde8ff);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            display: none;
+                        }
+                        &.active {
+                            animation-duration: 2s;
+                            animation-name: slideInAboutInforRight;
+                            @keyframes slideInAboutInforRight {
+                                from {
+                                    opacity: 0;
+                                }
+                                to {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        &.active > .section-about-infor-number-content,
+                        &.active > .section-about-infor-number-content span,
+                        &.animation-done > .section-about-infor-number-content,
+                        &.animation-done > .section-about-infor-number-content span {
+                            display: flex !important;
+                        }
+                    }
+                    .section-about-infor-text {
+                        padding: 10px;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        .section-about-infor-text-title {
+                            font-size: 30px;
+                            font-weight: 700;
+                            line-height: 30px;
+                        }
+                        .section-about-infor-text-content {
+                            font-size: 20px;
+                        }
+                        &.active {
+                            animation-duration: 2s;
+                            animation-name: slideInAboutInforRight;
+                            @keyframes slideInAboutInforRight {
+                                from {
+                                    opacity: 0;
+                                }
+                                to {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                    .section-about-infor-cv {
+                        width: 100%;
+                        text-align: center;
+                        margin: 10px;
+
+                        .section-about-infor-down {
+                            width: 100%;
+                            padding: 20px;
+                            background: #5c5c5c;
+                            border-radius: 8px;
+                            border: 1px solid #5c5c5c;
+                            color: white;
+                            opacity: 0.6;
+                            transition: all 0.5s;
+                            letter-spacing: 5px;
+                        }
+                        .section-about-infor-down:hover {
+                            background: linear-gradient(to right, #8482be, #bde8ff);
+                            transition: all 0.5s;
+                            opacity: 1;
+                        }
+                        &.active {
+                            animation-duration: 2s;
+                            animation-name: slideInAboutInforRight;
+                            @keyframes slideInAboutInforRight {
+                                from {
+                                    opacity: 0;
+                                }
+                                to {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .section-content-services {
+            margin: 50px 0 200px 0;
+            .section-services-title {
+                position: absolute;
+                left: -130px;
+                font-size: 188px;
+                font-weight: 800;
+                letter-spacing: 15px;
+                -webkit-writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                text-align: left;
+                color: #202020;
+                &.active {
+                    animation-duration: 2s;
+                    animation-name: slideInServicesTitle;
+                    @keyframes slideInServicesTitle {
+                        from {
+                            transform: rotate(180deg) translateX(-150px);
+                            opacity: 0;
+                        }
+                        to {
+                            transform: rotate(180deg) translateX(0px);
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .section-services-content {
+                padding: 20px 0 50px 120px;
+                display: flex;
+                justify-content: center;
+                .section-services-box {
+                    margin: 15px 0;
+                    padding: 40px;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 8px;
+                    background-image: linear-gradient(to right, #8482be, #bde8ff);
+                    &.active {
+                        animation-duration: 2s;
+                        animation-name: slideInServicesContent;
+                        @keyframes slideInServicesContent {
+                            from {
+                                opacity: 0;
+                            }
+                            to {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    .section-services-name {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        .title-head-form {
+                            font-size: 26px;
+                            letter-spacing: 5px;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            flex-grow: 1;
+                            text-align: center;
+                        }
+                        .icon-head-form {
+                            cursor: pointer;
+                            width: 20px;
+                            height: 20px;
+                            height: fit-content;
+                        }
+                    }
+                    .section-services-desc {
+                        font-size: 16px;
+                        display: block;
+                        overflow: hidden;
+                        max-height: 0;
+                        transition: max-height 1s;
+                        ul {
+                            padding: 0;
+                            li {
+                                list-style-type: none;
+                            }
+                        }
+                        &.trans {
+                            max-height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+        .section-content-skills {
+            margin: 50px 0 200px 0;
+            .section-skills-title {
+                position: absolute;
+                left: -130px;
+                font-size: 188px;
+                font-weight: 800;
+                letter-spacing: 15px;
+                -webkit-writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                text-align: left;
+                color: #202020;
+                &.active {
+                    animation-duration: 2s;
+                    animation-name: slideInSkillsTitle;
+                    @keyframes slideInSkillsTitle {
+                        from {
+                            transform: rotate(180deg) translateX(-150px);
+                            opacity: 0;
+                        }
+                        to {
+                            transform: rotate(180deg) translateX(0px);
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .section-skills-infor {
+                display: flex;
+                padding: 20px 0 50px 120px;
+                justify-content: space-between;
+                .section-skills-infor-left {
+                    width: 35%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    .section-skills-infor-left-title {
+                        font-size: 30px;
+                        font-weight: bold;
+                        line-height: 30px;
+                        text-transform: uppercase;
+                    }
+                    .section-skills-infor-left-content {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+                .section-skills-infor-right {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    .section-skills-infor-right-no {
+                        display: flex;
+                        align-items: flex-end;
+                        gap: 15px;
+                        .section-skills-infor-right-percents {
+                            font-size: 30px;
+                            font-weight: 300;
+                            color: #6db363;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
