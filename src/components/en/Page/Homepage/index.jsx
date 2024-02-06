@@ -1,59 +1,14 @@
-import React from 'react';
-
+import React, {useEffect} from 'react';
+import { useNavigate } from 'react-router-dom';
 const Index = () => {
+    const navigate = useNavigate()
+    useEffect(() => {
+        navigate('/en-US')
+    }, []);
     return (
-        <div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-            <div>10</div>
-        </div>
+        <>
+            
+        </>
     );
 }
 

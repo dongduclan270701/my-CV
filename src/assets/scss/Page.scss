@@ -983,6 +983,7 @@
         }
     }
     .container-header-mobile {
+        
         position: fixed;
         z-index: 10;
         width: 100%;
@@ -1083,30 +1084,10 @@
         }
     }
     .section-nav-mobile-box.active {
-        display: inline-block;
-        width: 40%;
-        animation: onClick 0.5s forwards;
-        @keyframes onClick {
-            from {
-                width: 0%;
-            }
-            to {
-                width: 40%;
-            }
-        }
+        display: none;
     }
     .section-nav-mobile-box.deactivate {
-        display: inline-block;
-        animation: onClickClose 0.5s forwards;
-        width: 0%;
-        @keyframes onClickClose {
-            from {
-                width: 40%;
-            }
-            to {
-                width: 0%;
-            }
-        }
+        display: none;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -1323,6 +1304,32 @@
     .section-nav-mobile-box {
         display: inline-block;
     }
+    .section-nav-mobile-box.active {
+        display: inline-block !important;
+        width: 40%;
+        animation: onClick 0.5s forwards;
+        @keyframes onClick {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 40%;
+            }
+        }
+    }
+    .section-nav-mobile-box.deactivate {
+        display: inline-block !important;
+        animation: onClickClose 0.5s forwards;
+        width: 0%;
+        @keyframes onClickClose {
+            from {
+                width: 40%;
+            }
+            to {
+                width: 0%;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1336,5 +1343,31 @@
     }
     .section-nav-mobile-box {
         display: inline-block;
+    }
+    .section-nav-mobile-box.active {
+        display: inline-block !important;
+        width: 40%;
+        animation: onClick 0.5s forwards;
+        @keyframes onClick {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 40%;
+            }
+        }
+    }
+    .section-nav-mobile-box.deactivate {
+        display: inline-block !important;
+        animation: onClickClose 0.5s forwards;
+        width: 0%;
+        @keyframes onClickClose {
+            from {
+                width: 40%;
+            }
+            to {
+                width: 0%;
+            }
+        }
     }
 }
