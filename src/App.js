@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import CVEn from 'components/en/CV'
-// import CVVi from 'components/vi/CV'
+import CVEn from 'components/en/CV'
+import CVVi from 'components/vi/CV'
 import PageEn from 'components/en/Page'
 import PageVi from 'components/vi/Page'
 import {
@@ -13,9 +13,10 @@ function App() {
   const page = [
     { path: "/en-US/", location: PageEn },
     { path: "/vi-VN/", location: PageVi },
-    // { path: "/en-US/my-cv", location: CVEn },
-    // { path: "/vi-VN/my-cv", location: CVVi }
+    { path: "/en-US/my-cv", location: CVEn },
+    { path: "/vi-VN/my-cv", location: CVVi }
   ]
+  
   return (
     <Router>
       <Routes>

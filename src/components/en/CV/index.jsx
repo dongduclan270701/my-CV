@@ -15,88 +15,111 @@ const Index = () => {
         email: 'dongduclan277@gmail.com',
         location: 'Thanh Xuân, Hà Nội'
     })
-    const [aim, setAim] = useState('Mong muốn tìm 1 nơi để phát triển kỹ năng chuyên ngành của bản thân, tìm 1 môi trường có thể giúp đỡ lẫn nhau và gắn bó lâu dài trong công việc để có thể làm cho công ty phát triển chứ không riêng bản thân 1 cách toàn diện.')
+    const [aim, setAim] = useState('Desire to find a place to develop my own specialized skills, find an environment where I can help each other and have a long-term commitment to work so that I can make the company grow, not just myself. overview.')
     const [education, setEducation] = useState([
         {
             timeFirst: '09/2019',
-            timeLast: 'nay',
+            timeLast: '2023',
             occupation: 'WEB FULLSTACK',
-            school: 'Học viện công nghệ và kĩ thuật số VTC Academy (VietnamTelevision Corporation)',
+            school: 'VTC Academy (VietnamTelevision Corporation)',
             desc: 'Web fullstack developer'
         },
         {
             timeFirst: '04/2023',
-            timeLast: 'nay',
-            occupation: '4 KỸ NĂNG: LISTENING, READING, SPEAKING, WRITTING ( IELTS )',
+            timeLast: '12/2024',
+            occupation: '4 SKILLS: LISTENING, READING, SPEAKING, WRITTING ( IELTS )',
             school: 'IELTS Fighter',
-            desc: 'Đã học xong band 4.5 và đang tiếp tục theo học lên band 7.5'
+            desc: '4 skills such as Listening, Reading, Writing, Speaking are at band 4.5 and are continuing their learning path to band 7 by the end of 2024..'
         }
     ])
     const [skills, setSkills] = useState([
         {
-            title: 'Kĩ năng chuyên ngành',
+            title: 'Specialized skills',
             content: [
                 'HTML, CSS, SASS, Javascript',
                 'ReactJS, React-native, Express, Mongodb, NodeJS, Postman',
-                'Thiết kế UI - UX cho website, mobile',
-                'Khả năng nghiên cứu, đọc hiểu tài liệu chuyên ngành ( có khả năng đọc hiểu tiếng anh)'
+                'Design UI - UX for website, mobile',
+                'Ability to research and read specialized documents (can read and understand English)'
             ]
         }
     ])
     const [exp, setExp] = useState([
         {
+            title: 'Website CV ( ReactJS )',
+            content: [
+                'Link github: https://github.com/dongduclan270701/my-CV',
+                'Link Website: https://kassdev.com',
+                'Using technology: ReactJS (Func component, react hook, bootstrap, library...)'
+            ]
+        },
+        {
+            title: 'Website Xe Ghep ( ReactJS )',
+            content: [
+                'Link github: https://github.com/dongduclan270701/compoundCar',
+                'Link Website: https://xeghepbacgiangbacninhhanoi.com',
+                'Using technology: ReactJS (Func component, react hook , bootstrap, library notification)'
+            ]
+        },
+        {
+            title: 'Website Xe Ghep ( NodeJS )',
+            content: [
+                'Link github: https://github.com/dongduclan270701/compoundapi',
+                'Using technology : NodeJs, Express, MongoDB, Postman'
+            ]
+        },
+        {
             title: 'Website KTech ( ReactJS )',
             content: [
                 'Link github: https://github.com/dongduclan270701/finalproject ( branch dev-fe)',
-                'Link Website: https://ktech-uw1a.onrender.com(Đã đưa sản phẩm lên môi trường thật)',
-                'Công nghệ sử dụng : ReactJS (Func component, react hook: useContext, memo, useCallBack,..., axios, bootstrap, thư hiện notification)'
+                'Link Website: https://ktech-uw1a.onrender.com',
+                'Using technology: ReactJS (Func component, react hook: useContext, memo, useCallBack,..., axios, bootstrap, library notification)'
             ]
         },
         {
             title: 'NodeJS Website KTech',
             content: [
                 'Link github: https://github.com/dongduclan270701/finalprojectnodejs( branch dev-demo)',
-                'Link API: Đã tích hợp vào website  https://ktech-uw1a.onrender.com(Đã đưa sản phẩm lên môi trường thật)',
-                'Công nghệ sử dụng : NodeJs, Express, MongoDB, Postman'
+                'Link API: Integrated into the website  https://ktech-uw1a.onrender.com',
+                'Using technology : NodeJs, Express, MongoDB, Postman'
             ]
         },
         {
             title: 'Website KTech Admin ( ReactJS)',
             content: [
                 'Link github: https://github.com/dongduclan270701/finalprojectadmin( branch test-demo)',
-                'Link Website: https://ktech-dashboard.onrender.com/(Đã đưa sản phẩm lên môi trường thật, nếu muốn trải nghiệm hãy liên lạc cho em để cho tài khoản!)',
-                'Công nghệ sử dụng : ReactJS (Func component, react hook: useContext, memo, useCallBack,..., axios, bootstrap, thư hiện notification)',
-                'Phân quyền theo chức năng, mỗi chức năng sẽ hiển thị khác nhau(thông số dữ liệu, biểu đồ, thông tin, tính doanh số, ....)'
+                'Link Website: https://ktech-dashboard.onrender.com/(If you want to experience it, please contact me to give me an account!!)',
+                'Using technology: ReactJS (Func component, react hook: useContext, memo, useCallBack,..., axios, bootstrap, library notification)',
+                'Decentralized by function, each function will display differently (data parameters, charts, information, sales calculations, ....)'
             ]
         },
         {
             title: 'NodeJS Website KTech Admin',
             content: [
                 'Link github: https://github.com/dongduclan270701/final-backend-admin( branch code)',
-                'Link API: Đã tích hợp vào website https://ktech-dashboard.onrender.com/(Đã đưa sản phẩm lên môi trường thật)',
-                'Công nghệ sử dụng : NodeJs, Express, MongoDB, Postman'
+                'Link API: Integrated into the website https://ktech-dashboard.onrender.com/',
+                'Using technology: NodeJs, Express, MongoDB, Postman'
             ]
         },
         {
             title: 'App Mobile Ktech ( React-native )',
             content: [
                 'Link github: https://github.com/dongduclan270701/appmobile( branch main)',
-                'Link app expo: exp://exp.host/@ranconkoyx/app-awesome?release-channel=default(Do vấn đề kinh phí cho nên chỉ có thể đưa sản phẩm lên và chạy trên Android, còn IOS thì chưa thể chạy được các máy khác ngoài tài khoản của dev)',
-                'Công nghệ sử dụng : React-native, expo, axios, modal, ...'
+                'Link app expo: exp://exp.host/@ranconkoyx/app-awesome?release-channel=default',
+                'Using technology: React-native, expo, axios, modal, ...'
             ]
         },
         {
             title: 'Website Lsevn ( ReactJS )',
             content: [
                 'Link github: https://github.com/dongduclan270701/frontend-lsevn',
-                'Công nghệ sử dụng : ReactJS (Functional component, react hook, HTML, CSS, SCSS, Javascript, axios (restful api), graphql, một số thư viện UI( table, DataGrid ,chart, sweetalert)'
+                'Using technology: ReactJS (Functional component, react hook, HTML, CSS, SCSS, Javascript, axios (restful api), graphql, library UI( table, DataGrid ,chart, sweetalert)'
             ]
         },
         {
             title: 'Website nknx ( ReactJS )',
             content: [
                 'Link github: https://github.com/dongduclan270701/frontend-nknx',
-                'Công nghệ sử dụng: backend sử dụng Strapi, front-end dùng ReactJS ( Function component, react hook, HTML, CSS, SCSS, Javascript, axios (restful api), graphql, một số thư viện UI ( sweetalert, armChart)'
+                'Using technology: backend using Strapi, front-end dùng ReactJS ( Function component, react hook, HTML, CSS, SCSS, Javascript, axios (restful api), graphql, một số thư viện UI ( sweetalert, armChart)'
             ]
         },
         {
@@ -117,7 +140,6 @@ const Index = () => {
             title: 'Web full - stack ( HTML , CSS , JS , PHP )',
             content: [
                 'Link github: https://github.com/dongduclan270701/Group5_WD05_OutfitShop_Code',
-                'Website outfit shop'
             ]
         },
     ])

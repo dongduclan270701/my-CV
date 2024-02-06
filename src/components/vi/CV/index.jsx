@@ -19,14 +19,14 @@ const Index = () => {
     const [education, setEducation] = useState([
         {
             timeFirst: '09/2019',
-            timeLast: 'nay',
+            timeLast: '2023',
             occupation: 'WEB FULLSTACK',
             school: 'Học viện công nghệ và kĩ thuật số VTC Academy (VietnamTelevision Corporation)',
             desc: 'Web fullstack developer'
         },
         {
             timeFirst: '04/2023',
-            timeLast: 'nay',
+            timeLast: '12/2024',
             occupation: '4 KỸ NĂNG: LISTENING, READING, SPEAKING, WRITTING ( IELTS )',
             school: 'IELTS Fighter',
             desc: 'Đã học xong band 4.5 và đang tiếp tục theo học lên band 7.5'
@@ -45,10 +45,33 @@ const Index = () => {
     ])
     const [exp, setExp] = useState([
         {
+            title: 'Website CV ( ReactJS )',
+            content: [
+                'Link github: https://github.com/dongduclan270701/my-CV',
+                'Link Website: https://kassdev.com',
+                'Công nghệ sử dụng: ReactJS (Func component, react hook, bootstrap, library...)'
+            ]
+        },
+        {
+            title: 'Website Xe Ghep ( ReactJS )',
+            content: [
+                'Link github: https://github.com/dongduclan270701/compoundCar',
+                'Link Website: https://xeghepbacgiangbacninhhanoi.com',
+                'Công nghệ sử dụng: ReactJS (Func component, react hook , bootstrap, library notification)'
+            ]
+        },
+        {
+            title: 'Website Xe Ghep ( NodeJS )',
+            content: [
+                'Link github: https://github.com/dongduclan270701/compoundapi',
+                'Công nghệ sử dụng : NodeJs, Express, MongoDB, Postman'
+            ]
+        },
+        {
             title: 'Website KTech ( ReactJS )',
             content: [
                 'Link github: https://github.com/dongduclan270701/finalproject ( branch dev-fe)',
-                'Link Website: https://ktech-uw1a.onrender.com(Đã đưa sản phẩm lên môi trường thật)',
+                'Link Website: https://ktech-uw1a.onrender.com',
                 'Công nghệ sử dụng : ReactJS (Func component, react hook: useContext, memo, useCallBack,..., axios, bootstrap, thư hiện notification)'
             ]
         },
@@ -56,7 +79,7 @@ const Index = () => {
             title: 'NodeJS Website KTech',
             content: [
                 'Link github: https://github.com/dongduclan270701/finalprojectnodejs( branch dev-demo)',
-                'Link API: Đã tích hợp vào website  https://ktech-uw1a.onrender.com(Đã đưa sản phẩm lên môi trường thật)',
+                'Link API: Đã tích hợp vào website  https://ktech-uw1a.onrender.com',
                 'Công nghệ sử dụng : NodeJs, Express, MongoDB, Postman'
             ]
         },
@@ -64,7 +87,7 @@ const Index = () => {
             title: 'Website KTech Admin ( ReactJS)',
             content: [
                 'Link github: https://github.com/dongduclan270701/finalprojectadmin( branch test-demo)',
-                'Link Website: https://ktech-dashboard.onrender.com/(Đã đưa sản phẩm lên môi trường thật, nếu muốn trải nghiệm hãy liên lạc cho em để cho tài khoản!)',
+                'Link Website: https://ktech-dashboard.onrender.com/(nếu muốn trải nghiệm hãy liên lạc cho em để cho tài khoản!)',
                 'Công nghệ sử dụng : ReactJS (Func component, react hook: useContext, memo, useCallBack,..., axios, bootstrap, thư hiện notification)',
                 'Phân quyền theo chức năng, mỗi chức năng sẽ hiển thị khác nhau(thông số dữ liệu, biểu đồ, thông tin, tính doanh số, ....)'
             ]
@@ -73,7 +96,7 @@ const Index = () => {
             title: 'NodeJS Website KTech Admin',
             content: [
                 'Link github: https://github.com/dongduclan270701/final-backend-admin( branch code)',
-                'Link API: Đã tích hợp vào website https://ktech-dashboard.onrender.com/(Đã đưa sản phẩm lên môi trường thật)',
+                'Link API: Đã tích hợp vào website https://ktech-dashboard.onrender.com/',
                 'Công nghệ sử dụng : NodeJs, Express, MongoDB, Postman'
             ]
         },
@@ -81,7 +104,7 @@ const Index = () => {
             title: 'App Mobile Ktech ( React-native )',
             content: [
                 'Link github: https://github.com/dongduclan270701/appmobile( branch main)',
-                'Link app expo: exp://exp.host/@ranconkoyx/app-awesome?release-channel=default(Do vấn đề kinh phí cho nên chỉ có thể đưa sản phẩm lên và chạy trên Android, còn IOS thì chưa thể chạy được các máy khác ngoài tài khoản của dev)',
+                'Link app expo: exp://exp.host/@ranconkoyx/app-awesome?release-channel=default',
                 'Công nghệ sử dụng : React-native, expo, axios, modal, ...'
             ]
         },

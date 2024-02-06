@@ -5,7 +5,7 @@ const Index = (props) => {
   return (
     <div className='por'>
       <div className='title'>
-        <div className='title-content'>KINH NGHIỆM LÀM VIỆC</div>
+        <div className='title-content'>EXPERIENCE</div>
         <div className='underline-title'></div>
       </div>
       <div className='underline'></div>
