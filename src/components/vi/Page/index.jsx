@@ -529,20 +529,20 @@ const Index = () => {
                             </div>
                             <div className='section-education-infor'>
                                 <div className='section-education-infor-box'>
-                                    <div className='col-5 section-education-infor-box-time'>
+                                    <div className='col-md-5 section-education-infor-box-time'>
                                         Tháng 9, 2019 – 2023
                                     </div>
-                                    <div className='col-7 section-education-infor-box-content'>
+                                    <div className='col-md-7 section-education-infor-box-content'>
                                         <div className='section-education-infor-box-text'>Full-Stack Developer ( VTC Academy - Ha Noi / Viet Nam )</div>
                                         <div className='section-education-infor-box-text'>Đã được trang bị tất cả kiến thức về Full-Stack ( M.E.R.N ). Từ Front-end đến Back-end, thiết kế UI-UX cho website ( Figma, AdobeXD ), thiết kể API.</div>
                                         <div className='section-education-infor-box-text'>Ha Noi / Viet Nam</div>
                                     </div>
                                 </div>
                                 <div className='section-education-infor-box'>
-                                    <div className='col-5 section-education-infor-box-time'>
+                                    <div className='col-md-5 section-education-infor-box-time'>
                                         Tháng 4, 2023 – Tháng 12, 2024
                                     </div>
-                                    <div className='col-7 section-education-infor-box-content'>
+                                    <div className='col-md-7 section-education-infor-box-content'>
                                         <div className='section-education-infor-box-text'>IELTS band 7+ ( IELTS Fighter - Ha Noi / Viet Nam )</div>
                                         <div className='section-education-infor-box-text'>Hiện tại 4 kỹ năng như Listening, Reading, Writing, Speaking đang ở band 4.5 và đang tiếp tục lộ trình học đến band 7+ trong cuối năm 2024.</div>
                                         <div className='section-education-infor-box-text'>Ha Noi / Viet Nam</div>
