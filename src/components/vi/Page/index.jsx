@@ -6,6 +6,8 @@ import Avatar from 'assets/images/avatar.jpeg'
 import Quotes from 'assets/images/icon_quote_refs.png'
 import Loading from 'components/en/Page/Loading'
 import CountUp from 'react-countup'
+import axios from 'axios'
+
 const Index = () => {
     const navigate = useNavigate()
     const location = useLocation()
@@ -135,7 +137,17 @@ const Index = () => {
             clearTimeout(timer)
         }
     }, [isLoading])
-
+    useEffect(() => {
+        const fetchPostIP = async () => {
+            const req = await axios.post('https://ktech-admin.onrender.com/v1/ip/ipUser')
+            return req.data
+        }
+        fetchPostIP()
+            .then()
+            .catch(error => {
+                console.log(error)
+            })
+    }, []);
 
     const scrollTo = (id) => {
         const element = document.getElementById(id)

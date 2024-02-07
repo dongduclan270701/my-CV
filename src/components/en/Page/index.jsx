@@ -1,12 +1,12 @@
 import React, { useState, useEffect, memo } from 'react'
-import { NavLink, useNavigate, useLocation } from "react-router-dom"
+import { useNavigate, useLocation } from "react-router-dom"
 import 'assets/scss/Page.scss'
 import Sign from 'assets/images/signature.png'
 import Avatar from 'assets/images/avatar.jpeg'
 import Quotes from 'assets/images/icon_quote_refs.png'
 import Loading from 'components/en/Page/Loading'
 import CountUp from 'react-countup'
-import Menu from 'assets/images/menu-svgrepo-com.svg'
+import axios from 'axios'
 const Index = () => {
     const navigate = useNavigate()
     const location = useLocation()
@@ -137,6 +137,17 @@ const Index = () => {
         }
     }, [isLoading])
 
+    useEffect(() => {
+        const fetchPostIP = async () => {
+            const req = await axios.post('https://ktech-admin.onrender.com/v1/ip/ipUser')
+            return req.data
+        }
+        fetchPostIP()
+            .then()
+            .catch(error => {
+                console.log(error)
+            })
+    }, []);
 
     const scrollTo = (id) => {
         const element = document.getElementById(id)
