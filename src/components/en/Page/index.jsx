@@ -302,7 +302,7 @@ const Index = () => {
                                             Website
                                         </div>
                                         <div className='section-about-infor-content'>
-                                            www.kassdev.com
+                                            kassdev.com
                                         </div>
                                     </div>
                                     <div className='section-about-infor-box'>
