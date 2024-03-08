@@ -278,7 +278,7 @@ const Index = () => {
                                             ROLE
                                         </div>
                                         <div className='section-about-infor-content'>
-                                            Freelancer
+                                            Website design
                                         </div>
                                     </div>
                                     <div className='section-about-infor-box'>
@@ -294,7 +294,7 @@ const Index = () => {
                                             PHONE
                                         </div>
                                         <div className='section-about-infor-content'>
-                                            (+84) 37.938.2992
+                                            (+84) 0379382992
                                         </div>
                                     </div>
                                     <div className='section-about-infor-box'>
@@ -311,14 +311,6 @@ const Index = () => {
                                         </div>
                                         <div className='section-about-infor-content'>
                                             Ha Noi, Viet Nam
-                                        </div>
-                                    </div>
-                                    <div className='section-about-infor-box'>
-                                        <div className='section-about-infor-title'>
-                                            INTERESTS
-                                        </div>
-                                        <div className='section-about-infor-content'>
-                                            Games, Books, Movies
                                         </div>
                                     </div>
                                     <div className='section-about-infor-box'>

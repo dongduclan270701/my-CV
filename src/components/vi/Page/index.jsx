@@ -212,7 +212,7 @@ const Index = () => {
                                 <option value='🇻🇳 Vietnamese' >🇻🇳 Vietnamese</option>
                             </select>
                             <div id="checkbox2" className={isMenu ? 'checked' : ''}></div>
-                            <label class="toggle toggle2" for="checkbox2"  onClick={() => { setIsMenu(!isMenu) }}>
+                            <label class="toggle toggle2" for="checkbox2" onClick={() => { setIsMenu(!isMenu) }}>
                                 <div id="bar4" class="bars"></div>
                                 <div id="bar5" class="bars"></div>
                                 <div id="bar6" class="bars"></div>
@@ -279,7 +279,7 @@ const Index = () => {
                                             ROLE
                                         </div>
                                         <div className='section-about-infor-content'>
-                                            Freelancer
+                                            Thiết kế website
                                         </div>
                                     </div>
                                     <div className='section-about-infor-box'>
@@ -295,7 +295,7 @@ const Index = () => {
                                             SỐ ĐIỆN THOẠI
                                         </div>
                                         <div className='section-about-infor-content'>
-                                            (+84) 37.938.2992
+                                            (+84) 0379382992
                                         </div>
                                     </div>
                                     <div className='section-about-infor-box'>
@@ -303,7 +303,7 @@ const Index = () => {
                                             WEBSITE
                                         </div>
                                         <div className='section-about-infor-content'>
-                                            www.kassdev.com
+                                            kassdev.com
                                         </div>
                                     </div>
                                     <div className='section-about-infor-box'>
@@ -312,14 +312,6 @@ const Index = () => {
                                         </div>
                                         <div className='section-about-infor-content'>
                                             Ha Noi, Viet Nam
-                                        </div>
-                                    </div>
-                                    <div className='section-about-infor-box'>
-                                        <div className='section-about-infor-title'>
-                                            HỨNG THÚ
-                                        </div>
-                                        <div className='section-about-infor-content'>
-                                            Games, Books, Movies
                                         </div>
                                     </div>
                                     <div className='section-about-infor-box'>
