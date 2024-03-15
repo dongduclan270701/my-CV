@@ -690,7 +690,7 @@ const Index = () => {
                                     <div className='section-contact-infor-right-content'>
                                         <div className='section-contact-infor-right-f'><span className='span-title'>Tên: </span>Kass D. Dong</div>
                                         <div className='section-contact-infor-right-f'><span className='span-title'>Địa chỉ: </span>Ha Noi, Viet Nam</div>
-                                        <div className='section-contact-infor-right-f'><span className='span-title'>Số điện thoại: </span>(+84) 37.938.2992</div>
+                                        <div className='section-contact-infor-right-f'><span className='span-title'>Số điện thoại: </span>(+84) 0379382992</div>
                                         <div className='section-contact-infor-right-f'><span className='span-title'>Hoạt động: </span>9:00 am – 9:00 pm</div>
                                     </div>
                                     <div className='section-contact-infor-right-content'>

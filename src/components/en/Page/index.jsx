@@ -689,7 +689,7 @@ const Index = () => {
                                     <div className='section-contact-infor-right-content'>
                                         <div className='section-contact-infor-right-f'><span className='span-title'>Name: </span>Kass D. Dong</div>
                                         <div className='section-contact-infor-right-f'><span className='span-title'>Address: </span>Ha Noi, Viet Nam</div>
-                                        <div className='section-contact-infor-right-f'><span className='span-title'>Phone: </span>(+84) 37.938.2992</div>
+                                        <div className='section-contact-infor-right-f'><span className='span-title'>Phone: </span>(+84) 0379382992</div>
                                         <div className='section-contact-infor-right-f'><span className='span-title'>Hours: </span>6:00 am – 2:00 am</div>
                                     </div>
                                     <div className='section-contact-infor-right-content'>
